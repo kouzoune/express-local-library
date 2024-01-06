@@ -50,7 +50,7 @@ const Limiter = RateLimit({
   max: 20,
 });
 
-app.use(limiter);
+app.use(Limiter);
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
